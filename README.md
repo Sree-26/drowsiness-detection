@@ -91,7 +91,7 @@ MAR = vertical mouth distance / horizontal mouth distance
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/drowsiness-detection.git
+git clone https://github.com/Sree-26/drowsiness-detection.git
 cd drowsiness-detection
 
 # 2. Create a virtual environment
