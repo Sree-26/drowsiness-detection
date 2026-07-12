@@ -131,7 +131,6 @@ automatically to `logs/session_summary.csv`.
 - Drowsiness correctly flagged within ~1 second of sustained eye closure during testing
 - Yawn detection triggers reliably on wide mouth-opening gestures
 - Per-session CSV logs: individual event timestamps + summary (duration, drowsy event count, yawn count)
-- *(Add your actual test screenshots/GIFs and measured accuracy here after testing.)*
 
 ## 🔭 Future Scope
 
