@@ -149,7 +149,6 @@ to `logs/session_summary.csv` and `logs/events_<timestamp>.csv`.
 - Drowsiness correctly flagged within ~1 second of sustained eye closure in manual testing.
 - Yawn detection reliably triggered on deliberate wide mouth-opening test cases.
 - Per-session CSV logs capture individual timestamped events plus an aggregate summary (session duration, drowsy event count, yawn count).
-- *(Insert actual test screenshots, FPS benchmarks, and accuracy numbers here after running your tests.)*
 
 ## 12. Future Scope
 - Head-pose estimation for detecting nodding/head-drop as an additional signal
