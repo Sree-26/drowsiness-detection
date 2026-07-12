@@ -6,10 +6,8 @@
 ## 2. Team Details
 | Name | Role | GitHub / Contact |
 |---|---|---|
-| *Your Name* | Team Lead / CV Developer | *@your-github* |
-| *Teammate Name* | Developer | *@teammate-github* |
-
-*(Update with your actual team information before submission.)*
+| *Sree V K* | Team Lead / CV Developer | *@Sree-26* |
+| *Swathi M* | Developer | *@swathim0406* |
 
 ## 3. Problem Statement
 Drowsy driving is a leading cause of road accidents worldwide, and fatigue
