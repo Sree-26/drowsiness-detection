@@ -61,10 +61,9 @@ def play_alert_sound(sound_path: str = "assets/alert.wav"):
     """Play alert sound asynchronously so it doesn't block the video loop."""
     def _play():
         try:
-            import playsound
-            playsound.playsound(sound_path)
+            import winsound
+            winsound.PlaySound(sound_path, winsound.SND_FILENAME | winsound.SND_ASYNC)
         except Exception:
-            # Fallback: terminal bell if playsound/audio unavailable (e.g. headless env)
             print("\a")
 
     threading.Thread(target=_play, daemon=True).start()
