@@ -56,10 +56,12 @@ When drowsiness is detected, the system:
 | Facial Landmark Detection | MediaPipe Face Mesh (Google, pretrained) |
 | Video I/O & Rendering | OpenCV |
 | Numerical Computation | NumPy, SciPy |
-| Audio Alerts | playsound |
+| Alerts | winsound (Python built-in, Windows only) |
 | Optional Web Dashboard | Streamlit |
 | Data Logging | Python `csv` module |
 | Version Control | Git / GitHub |
+
+> **Note:** Audio alerts use Python's built-in `winsound` module (Windows only). On macOS/Linux, this falls back to a terminal beep (`\a`).
 
 ## 7. Dataset
 No labeled training dataset is required for the core MVP — the system uses
