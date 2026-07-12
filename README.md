@@ -60,8 +60,6 @@ No training dataset is required — MediaPipe Face Mesh is a pretrained model
 shipped by Google (Apache 2.0 license). All landmark detection happens
 on-device in real time. See [References](#-references) for attribution.
 
-*(Optional extension: MRL Eye Dataset or NTHU Drowsy Driver Dataset can be
-used to train a secondary CNN classifier — not required for this MVP.)*
 
 ## 🧠 Methodology / Architecture
 
@@ -156,8 +154,8 @@ automatically to `logs/session_summary.csv`.
 
 | Name | Role |
 |---|---|
-| *Your Name* | *Role (e.g., CV/ML Developer)* |
-| *Teammate Name* | *Role* |
+| *Sree V K* | *CV Developer* |
+| *Swathi M* | *Developer* |
 
 ## 📄 License
 
