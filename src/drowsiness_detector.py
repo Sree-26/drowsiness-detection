@@ -5,7 +5,7 @@ Detects drowsiness using Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR)
 computed from MediaPipe Face Mesh landmarks. Triggers an audio + visual alert
 when prolonged eye closure or yawning is detected.
 
-Author: <Your Team Name>
+Author: Sree V K
 """
 
 import cv2
@@ -49,6 +49,7 @@ class DrowsinessDetector:
         self.yawn_count = 0
         self.drowsy_events = 0
         self.alert_active = False
+        self.yawn_active = False
         self.logger = SessionLogger()
 
     def calibrate(self, cap, seconds: int = 5):
@@ -140,8 +141,12 @@ class DrowsinessDetector:
                 if mar > self.mar_threshold:
                     status_text = "YAWNING DETECTED"
                     status_color = (0, 165, 255)
-                    self.yawn_count += 1
-                    self.logger.log_event("yawn")
+                    if not self.yawn_active:
+                        self.yawn_count += 1
+                        self.logger.log_event("yawn")
+                        self.yawn_active = True
+                else:
+                    self.yawn_active = False
 
                 # --- Overlay info ---
                 cv2.putText(frame, f"EAR: {avg_ear:.2f}", (30, 30),
