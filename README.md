@@ -50,7 +50,7 @@ eye-open ratio, improving accuracy across different face shapes.
 | Face/landmark detection | MediaPipe Face Mesh |
 | Video capture & rendering | OpenCV |
 | Math / distance calculations | NumPy, SciPy |
-| Alerts | playsound (audio) |
+| Alerts | winsound (built-in, Windows) |
 | Optional dashboard | Streamlit |
 | Logging | CSV (built-in `csv` module) |
 
