@@ -46,7 +46,7 @@ eye-open ratio, improving accuracy across different face shapes.
 
 | Component | Technology |
 |---|---|
-| Language | Python 3.10+ |
+| Language | Python 3.11 |
 | Face/landmark detection | MediaPipe Face Mesh |
 | Video capture & rendering | OpenCV |
 | Math / distance calculations | NumPy, SciPy |
